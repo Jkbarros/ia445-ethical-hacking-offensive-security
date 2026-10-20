@@ -1,0 +1,21 @@
+@ECHO ON
+
+REM There needs to be a file called text.txt in the same directory as this script
+REM The file needs to be list of your machines with no spaces in the name
+REM "c:\Program Files\Oracle\VirtualBox\VBoxManage" list vms
+"c:\Program Files\Oracle\VirtualBox\VBoxManage" list vms > test.txt
+REM You can redirect the output to a file
+REM GetVMinfo.bat > <JulioBarros>445CheckOne>.txt
+TIMEOUT /T 15
+
+REM Getting list of NatNetworks
+"c:\Program Files\Oracle\VirtualBox\VBoxManage" list natnets
+REM Getting list of hostonly interfaces
+"c:\Program Files\Oracle\VirtualBox\VBoxManage" list hostonlyifs
+REM Getting list of DHCP server status
+"c:\Program Files\Oracle\VirtualBox\VBoxManage" list dhcpservers
+REM Getting list of Running VMs 
+"c:\Program Files\Oracle\VirtualBox\VBoxManage" list runningvms
+REM Getting details of vms
+for /F "delims= " %%A in (test.txt) do call "C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" showvminfo  %%A | findstr "Name: NIC VRAM CPUs OS Location"
+
