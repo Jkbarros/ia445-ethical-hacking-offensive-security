@@ -1,6 +1,6 @@
-﻿# IA 445 â€” Ethical Hacking and Offensive Security
+﻿# IA 445 - Ethical Hacking and Offensive Security
 
-College coursework archive for **IA 445 â€” Ethical Hacking and Offensive Security** at Eastern Michigan University.  
+College coursework archive for **IA 445 - Ethical Hacking and Offensive Security** at Eastern Michigan University.  
 Module write-ups, Earth lab series, and offensive security lab reports from Canvas.
 
 **Author:** [Julio Barros](https://github.com/Jkbarros)  
@@ -10,6 +10,7 @@ Module write-ups, Earth lab series, and offensive security lab reports from Canv
 
 | Area | Description |
 |------|-------------|
+| [Archive index](docs/archive-index.md) | Catalog of files in `archive/` with direct links |
 | [`archive/canvas-submissions/`](archive/canvas-submissions/) | Modules, labs (mobile/IoT/OT), Earth project PDFs/DOCX |
 
 ### Highlights
@@ -32,7 +33,7 @@ flowchart LR
 
 | Course | Link |
 |--------|------|
-| IA 103 â€” Information Security Overview | [information-security-overview](https://github.com/Jkbarros/information-security-overview) |
+| IA 103 - Information Security Overview | [information-security-overview](https://github.com/Jkbarros/information-security-overview) |
 | college-projects index | [college-projects](https://github.com/Jkbarros/college-projects) |
 
 ## Roadmap
@@ -47,4 +48,4 @@ flowchart LR
 
 ## License
 
-Content Â© Julio Barros. Use at your own risk.
+Content © Julio Barros. Use at your own risk.
