@@ -1,7 +1,7 @@
-# Archive index — ﻿# IA 445 - Ethical Hacking and Offensive Security
+# Archive index — IA 445
 
-Readable map of files under `archive/`.
-Original PDF/DOCX submissions from Canvas; open the linked file for full content.
+Readable map of files under `archive/`.  
+Prefer markdown in `docs/` when available.
 
 ## canvas-submissions
 
@@ -33,8 +33,7 @@ Original PDF/DOCX submissions from Canvas; open the linked file for full content
 | [Module 09-a.docx](../archive/canvas-submissions/Module%2009-a.docx) | docx |
 | [Module 3.pdf](../archive/canvas-submissions/Module%203.pdf) | pdf |
 
-
 ## Notes
 
-- Filenames match Canvas export names (including duplicates like `-1` copies).
-- Prefer markdown in `docs/` when available; this index is the fallback catalog.
+- `python scripts/docx_to_markdown.py` and `python scripts/build_pdf_docs.py` regenerate `docs/`.
+- Guided index: [submissions-catalog.md](submissions-catalog.md).

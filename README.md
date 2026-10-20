@@ -1,7 +1,9 @@
 ﻿# IA 445 - Ethical Hacking and Offensive Security
 
-College coursework archive for **IA 445 - Ethical Hacking and Offensive Security** at Eastern Michigan University.  
-Module write-ups, Earth lab series, and offensive security lab reports from Canvas.
+![Ethical hacking modules and labs](docs/demo.gif)
+
+College coursework portfolio for **IA 445** at Eastern Michigan University.  
+**Ethical Hacking Essentials** modules, **labs 02–10** (including **mobile**, **IoT**, and **OT**), the **Earth** project, and VirtualBox lab tooling.
 
 **Author:** [Julio Barros](https://github.com/Jkbarros)  
 **Index:** [college-projects](https://github.com/Jkbarros/college-projects)
@@ -10,41 +12,51 @@ Module write-ups, Earth lab series, and offensive security lab reports from Canv
 
 | Area | Description |
 |------|-------------|
-| [Archive index](docs/archive-index.md) | Catalog of files in `archive/` with direct links |
-| [`archive/canvas-submissions/`](archive/canvas-submissions/) | Modules, labs (mobile/IoT/OT), Earth project PDFs/DOCX |
+| [Submissions catalog](docs/submissions-catalog.md) | Full map of modules, labs, Earth project |
+| [Earth project](docs/ia-445-earth.md) | Primary DOCX + [PDF export](docs/ia-445-earth-pdf.md) |
+| [Lab 09 — Mobile](docs/lab-09-mobile-attacks-and-countermeasures.md) | Mobile attacks and countermeasures |
+| [Lab 10 — IoT/OT](docs/lab-10-iot-and-ot-attacks-and-countermeasures.md) | IoT and OT attacks and countermeasures |
+| [GetVMinfo script](docs/getvminfo-script.md) | VirtualBox inventory batch helper |
+| [Archive index](docs/archive-index.md) | All original Canvas files |
+| [`archive/canvas-submissions/`](archive/canvas-submissions/) | DOCX, PDF, and `.txt` exports |
 
 ### Highlights
 
-- Module 01-11 coursework and lab PDFs
-- Labs on mobile, IoT, and OT attack surfaces
-- IA 445 Earth project submissions
+- **12 DOCX** and **12 PDF** submissions converted to markdown under `docs/`
+- PDF pages with graphics include extracted screenshots in `docs/screenshots/`
+- Course arc: modules → hands-on labs → capstone-style Earth documentation
 
 ## Topics covered
 
 ```mermaid
 flowchart LR
-  R[Recon and modules]
-  A[Attacks and countermeasures]
-  M[Mobile IoT OT]
-  R --> A --> M
+  M[Modules 1-11]
+  L[Labs 2-10]
+  E[Earth project]
+  M --> L --> E
+```
+
+## Regenerate docs
+
+```bash
+pip install -r requirements.txt
+python scripts/docx_to_markdown.py
+python scripts/build_pdf_docs.py
+python scripts/generate_readme_demo.py
 ```
 
 ## Related repos
 
 | Course | Link |
 |--------|------|
-| IA 103 - Information Security Overview | [information-security-overview](https://github.com/Jkbarros/information-security-overview) |
+| IA 403 - Malware Analysis | [ia403-malware-analysis-reverse-engineering](https://github.com/Jkbarros/ia403-malware-analysis-reverse-engineering) |
+| IA 447 - Digital Forensics I | [ia447-digital-forensics-i](https://github.com/Jkbarros/ia447-digital-forensics-i) |
 | college-projects index | [college-projects](https://github.com/Jkbarros/college-projects) |
-
-## Roadmap
-
-- [ ] Convert key submissions to markdown in `docs/` (same pattern as IA 103)
-- [ ] Redact any sensitive identifiers before expanding public docs
 
 ## Notes for readers
 
-- This repo documents **my submitted work** for academic context only.
-- EMU or publisher course materials are not redistributed beyond my own submissions in `archive/`.
+- Educational offensive-security coursework only; use techniques only on systems you are authorized to test.
+- EMU or publisher materials are not redistributed beyond my submissions in `archive/`.
 
 ## License
 
